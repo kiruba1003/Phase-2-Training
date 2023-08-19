@@ -1,0 +1,33 @@
+<h3>List of servers!</h3>
+
+<!-- <p>{{ 'server with number'}}{{serverId}}
+    is currently {{serverStatus}}
+</p> -->
+<p>{{ 'server with number'}}{{ getServerId() }}
+    is currently {{ getServerStatus() }}
+</p> 
+
+<label>servar name:</label>
+<!-- <input type ="text" class="form-control" 
+(input)="onServerNameEntry($event)"/>
+<br />
+<p> {{serverName}}</p> -->
+
+
+<input type="text"
+[(ngModel)]="serverName"/> <br>
+<p>{{serverName}}</p>
+
+<button
+ class="btn btn-primary" 
+ [disabled]="!addNewServer"
+ (click)="onServerCreation()"
+ >
+ Add New Server
+</button>
+
+<p *ngIf="serverCreated=='Created'">{{serverCreated}}</p>
+
+<!-- <p>{{ addNewServer}} with string interpolation</p> -->
+
+<p [innerText]="addNewServer"></p>
