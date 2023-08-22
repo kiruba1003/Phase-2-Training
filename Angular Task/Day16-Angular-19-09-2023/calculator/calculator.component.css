@@ -1,0 +1,27 @@
+.outer{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    row-gap: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 0px;
+    padding: 30px;
+    background: white;
+}
+
+input{
+    width: 200px;
+}
+
+select{
+    width: 70px;
+}
+
+hr {
+    margin: 7px;
+  }
+
+  p{
+    font-weight: 700;
+    font-size: larger;
+  }
