@@ -1,0 +1,28 @@
+.alert {
+    padding: 10px;
+    border: 2px solid #d9534f;
+    
+   width: 40%;
+    margin-bottom: 10px;
+  }
+  
+  .warning {
+    font-weight: bold;
+  }
+
+  
+
+  hr {
+    margin: 7px;
+  }
+  
+  .msg {
+    color: #d63631;
+    padding: 20px;
+    font-size: larger;
+  }
+  
+  i {
+    font-size: larger;
+    margin-left: 10px;
+  }
