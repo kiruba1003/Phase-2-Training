@@ -1,0 +1,22 @@
+.outer {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  width: 40%;
+  margin-left: 36px;
+}
+button {
+  width: 100px;
+  margin-top: 2rem;
+}
+
+label {
+  opacity: 0.7;
+  text-align: initial;
+  margin-top: 2rem;
+}
+
+p {
+  text-align: initial;
+  margin-top: 2rem;
+}

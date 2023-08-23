@@ -1,0 +1,8 @@
+<div class="outer">
+    <label >Username : </label>
+    <input class="form-control" type="text" [(ngModel)]="username" style="width: 300px;" />
+    <button class="btn btn-primary" [disabled]="username == ''" (click)="onClick()" >Submit</button>
+
+
+    <p >Hai I am {{this.showusername}} here!! </p>
+</div>
