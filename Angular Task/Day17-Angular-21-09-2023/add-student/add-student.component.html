@@ -1,0 +1,27 @@
+<p>add-student works!</p>
+
+<form [formGroup]="AddStudentForm" (ngSubmit)="AddNewStudent()">
+    <div class="form-group" >
+        <label for="studid"> Rollno </label>
+        <input type="text" id="studid" class="form-control"
+        name="studid" formControlName="rollno">
+    </div>
+    <div class="form-group" >
+        <label for="studname"> Name : </label>
+        <input type="text" id="studname" class="form-control"
+        name="studname" formControlName="studentame">
+    </div>
+    <div class="form-group" >
+        <label for="studcity"> City : </label>
+        <input type="text" id="studcity" class="form-control"
+        name="studcity" formControlName="addr">
+    </div>
+    <div class="form-group" >
+        <label for="studpin">Pin : </label>
+        <input type="text" id="studpin" class="form-control"
+        name="studpin" formControlName="phno">
+    </div>
+    <div class="form-group" >
+        <input type="submit" value="Add" class="btn btn-success">
+    </div>
+</form>

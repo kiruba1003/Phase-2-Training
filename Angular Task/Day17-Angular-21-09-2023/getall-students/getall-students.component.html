@@ -1,0 +1,23 @@
+<p>getallstudents works!</p>
+
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Address</th>
+            <th scope="col">Phone</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let student of students">
+            <td>{{student.rollno}}</td>
+            <td>{{student.studentame}}</td>
+            <td>{{student.addr}}</td>
+            <td>{{student.phno}}</td>
+        </tr>
+
+    </tbody>
+</table>
