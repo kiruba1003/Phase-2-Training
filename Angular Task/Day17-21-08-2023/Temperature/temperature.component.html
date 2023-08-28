@@ -1,0 +1,17 @@
+<div class="container">
+    <h2>Temperature Calculator</h2>
+    <label for="temperature">Temperature:</label>
+    <input type="number" id="temperature" [(ngModel)]="temperature" placeholder="Enter temperature" required>
+    <br>
+    <label for="unit">Unit:</label>
+    <select id="unit" [(ngModel)]="selectedUnit">
+        <option value="celsius">Celsius</option>
+        <option value="fahrenheit">Fahrenheit</option>
+    </select>
+<br>
+    <button (click)="convertTemperature()">Convert</button>
+
+    <div id="result" *ngIf="convertedTemperature !== null">
+        Converted Temperature: {{ convertedTemperature.toFixed(2) }} {{ convertedUnit }}
+    </div>
+</div>
